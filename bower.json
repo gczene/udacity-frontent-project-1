@@ -1,0 +1,16 @@
+{
+  "name": "project-1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gczene/udacity-frontent-project-1",
+  "authors": [
+    "Gabor Czene <gabor@czene.co.uk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

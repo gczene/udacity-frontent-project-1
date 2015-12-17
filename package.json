@@ -1,0 +1,19 @@
+{
+  "name": "project-1",
+  "version": "1.0.0",
+  "description": "udacity project - frontend #1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gczene/udacity-frontent-project-1.git"
+  },
+  "author": "Gabor Czene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gczene/udacity-frontent-project-1/issues"
+  },
+  "homepage": "https://github.com/gczene/udacity-frontent-project-1"
+}
