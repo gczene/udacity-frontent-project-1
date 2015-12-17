@@ -9,9 +9,17 @@ module.exports = function (grunt) {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+      develop: {
+        options: {
+          mangle: false,
+          sourceMap: false,
+          beautify: true
+        },
+        files: {
+          './dist/js/output.min.js': [
+            'app/**/*.js'
+          ]
+        }
       }
     },
     clean: ['./dist'],
@@ -39,11 +47,34 @@ module.exports = function (grunt) {
       replace: {
         files: ['./app/index.html'],
         tasks: ['replace']
+      },
+      scripts: {
+        files: ['./app/**/*.js'],
+        tasks: ['jslint', 'uglify:' + target]
       }
     },
     copy: {
       main: {
         files: grunt.file.readJSON('./config/grunt/copy-' + target + '.json')
+      }
+    },
+    jslint: {
+      client: {
+        src: [
+          'Gruntfile.js',
+          './app/**/*.js'
+        ],
+        options: {
+          errorsOnly: true
+        },
+        directives: {
+          todo: true,
+          unparam: true,
+          nomen: true,
+          node: true,
+          indent: 2,
+          globals: ['angular']
+        }
       }
     }
   });
@@ -54,6 +85,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-nodestatic');
+  grunt.loadNpmTasks('grunt-jslint');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
 
