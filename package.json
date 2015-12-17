@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/gczene/udacity-frontent-project-1/issues"
   },
-  "homepage": "https://github.com/gczene/udacity-frontent-project-1"
+  "homepage": "https://github.com/gczene/udacity-frontent-project-1",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jslint": "^1.1.14",
+    "grunt-nodestatic": "^0.1.2",
+    "grunt-replace": "^0.11.0"
+  }
 }

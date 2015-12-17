@@ -1,0 +1,19 @@
+[{
+    "match": "material-css",
+    "replacement": "http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css"
+}, {
+    "match": "angular-js",
+    "replacement": "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"
+}, {
+  "match": "angular-animate-js",
+  "replacement": "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"
+}, {
+  "match": "angular-aria-js",
+  "replacement": "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"
+}, {
+  "match": "angular-messages-js",
+  "replacement": "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"
+}, {
+  "match": "angular-material-js",
+  "replacement": "http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"
+}]

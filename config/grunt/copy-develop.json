@@ -1,0 +1,37 @@
+[{
+  "expand": false,
+  "src": "./bower_components/angular/angular.min.js",
+  "dest": "./dist/js/angular.min.js"
+}, {
+  "expand": false,
+  "src": "./bower_components/angular/angular.min.js.map",
+  "dest": "./dist/js/angular.min.js.map"
+}, {
+  "expand": false,
+  "src": "./bower_components/angular-animate/angular-animate.min.js",
+  "dest": "./dist/js/angular-animate.min.js"
+}, {
+  "expand": false,
+  "src": "./bower_components/angular-animate/angular-animate.min.js.map",
+  "dest": "./dist/js/angular-animate.min.js.map"
+}, {
+  "expand": false,
+  "src": "./bower_components/angular-aria/angular-aria.min.js",
+  "dest": "./dist/js/angular-aria.min.js"
+}, {
+  "expand": false,
+  "src": "./bower_components/angular-aria/angular-aria.min.js.map",
+  "dest": "./dist/js/angular-aria.min.js.map"
+}, {
+  "expand": false,
+  "src": "./bower_components/angular-material/angular-material.min.js",
+  "dest": "./dist/js/angular-material.min.js"
+}, {
+  "expand": false,
+  "src": "./bower_components/angular-material/angular-material.min.css",
+  "dest": "./dist/css/angular-material.min.css"
+}, {
+  "expand": false,
+  "src": "./bower_components/angular-messages/angular-messages.min.js",
+  "dest": "./dist/js/angular-messages.min.js"
+}]

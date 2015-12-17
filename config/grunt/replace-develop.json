@@ -1,0 +1,19 @@
+[{
+  "match": "material-css",
+  "replacement": "./css/angular-material.min.css"
+}, {
+  "match": "angular-js",
+  "replacement": "./js/angular.min.js"
+}, {
+  "match": "angular-animate-js",
+  "replacement": "./js/angular-animate.min.js"
+}, {
+  "match": "angular-aria-js",
+  "replacement": "./js/angular-aria.min.js"
+}, {
+  "match": "angular-messages-js",
+  "replacement": "./js/angular-messages.min.js"
+}, {
+  "match": "angular-material-js",
+  "replacement": "./js/angular-material.min.js"
+}]
