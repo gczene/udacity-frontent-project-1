@@ -34,4 +34,8 @@
   "expand": false,
   "src": "./bower_components/angular-messages/angular-messages.min.js",
   "dest": "./dist/js/angular-messages.min.js"
+}, {
+  "expand": false,
+  "src": "./bower_components/angular-ui-router/release/angular-ui-router.min.js",
+  "dest": "./dist/js/angular-ui-router.min.js"
 }]

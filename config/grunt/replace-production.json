@@ -16,4 +16,7 @@
 }, {
   "match": "angular-material-js",
   "replacement": "http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"
+}, {
+  "match": "angular-ui-router-js",
+  "replacement": "//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"
 }]

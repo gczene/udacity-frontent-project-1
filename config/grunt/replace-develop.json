@@ -16,4 +16,7 @@
 }, {
   "match": "angular-material-js",
   "replacement": "./js/angular-material.min.js"
+}, {
+  "match": "angular-ui-router-js",
+  "replacement": "./js/angular-ui-router.min.js"
 }]
