@@ -2,7 +2,8 @@ angular.module('App', [
   'ui.router',
   'ngMaterial',
   'app.state',
-  'templates-main'
+  'templates-main',
+  'app.components'
 ])
   .config(['$mdThemingProvider', function ($mdThemingProvider) {
     'use strict';
@@ -10,3 +11,7 @@ angular.module('App', [
       .primaryPalette('teal')
       .accentPalette('pink');
   }]);
+
+angular.module('app.components', [
+  'app.components.register'
+]);
