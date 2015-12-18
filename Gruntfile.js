@@ -17,7 +17,8 @@ module.exports = function (grunt) {
         },
         files: {
           './dist/js/output.min.js': [
-            'app/**/*.js'
+            'app/**/*.js',
+            'tmp/**/*.js'
           ]
         }
       }
@@ -48,6 +49,10 @@ module.exports = function (grunt) {
         files: ['./app/index.html'],
         tasks: ['replace']
       },
+      html2js: {
+        files: ['./app/**/views/**/*.html'],
+        tasks: ['html2js', 'uglify']
+      },
       scripts: {
         files: ['./app/**/*.js'],
         tasks: ['jslint', 'uglify:' + target]
@@ -76,6 +81,20 @@ module.exports = function (grunt) {
           globals: ['angular']
         }
       }
+    },
+    html2js: {
+      options: {
+        // custom options, see below
+        base: 'app',
+        rename: function (name) {
+          return '/' + name;
+        },
+        quoteChar: '\''
+      },
+      main: {
+        src: ['./app/**/views/**/*.html'],
+        dest: 'tmp/templates.js'
+      }
     }
   });
 
@@ -87,12 +106,14 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-nodestatic');
   grunt.loadNpmTasks('grunt-jslint');
   grunt.loadNpmTasks('grunt-contrib-copy');
-
+  grunt.loadNpmTasks('grunt-html2js');
 
   // Default task(s).
   grunt.registerTask('develop', [
     'clean',
     'replace',
+    'html2js',
+    'uglify',
     'copy',
     'nodestatic',
     'watch'

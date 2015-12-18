@@ -5,8 +5,24 @@
     <link rel="stylesheet" href="@@material-css">
   </head>
 
-  <body ng-cloak>
-    <div ui-view></div>
+
+
+  <div layout="column" layout-fill md-primary>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <a ui-sref="home">Frontent Project #1</a>
+        <!-- fill up the space between left and right area -->
+        <span flex></span>
+        <md-button>
+          Register
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-content>
+      Hello!
+    </md-content>
+  </div>
+    <span ui-view></span>
     <script src="@@angular-js"></script>
     <script src="@@angular-ui-router-js"></script>
     <script src="@@angular-animate-js"></script>
