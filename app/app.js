@@ -1,3 +1,4 @@
 angular.module('App', [
-  'ui.router'
+  'ui.router',
+  'app.state'
 ]);
