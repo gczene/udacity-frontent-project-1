@@ -13,5 +13,6 @@ angular.module('App', [
   }]);
 
 angular.module('app.components', [
+  'app.components.home',
   'app.components.register'
 ]);

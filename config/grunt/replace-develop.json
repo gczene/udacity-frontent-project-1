@@ -19,4 +19,7 @@
 }, {
   "match": "angular-ui-router-js",
   "replacement": "./js/angular-ui-router.min.js"
+}, {
+  "match": "materialize-css",
+  "replacement": "./css/materialize.css"
 }]

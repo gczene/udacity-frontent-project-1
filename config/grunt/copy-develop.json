@@ -36,6 +36,20 @@
   "dest": "./dist/js/angular-messages.min.js"
 }, {
   "expand": false,
+  "src": "./bower_components/angular-messages/angular-messages.min.js.map",
+  "dest": "./dist/js/angular-messages.min.js.map"
+}, {
+  "expand": false,
   "src": "./bower_components/angular-ui-router/release/angular-ui-router.min.js",
   "dest": "./dist/js/angular-ui-router.min.js"
+}, {
+  "expand": false,
+  "src": "./bower_components/materialize/dist/css/materialize.css",
+  "dest": "./dist/css/materialize.css"
+}, {
+  "flatten": false,
+  "expand": true,
+  "cwd": "./bower_components/materialize/dist/",
+  "src": "font/**",
+  "dest": "dist/"
 }]

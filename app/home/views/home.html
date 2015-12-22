@@ -1,9 +1,20 @@
 
-<div layout="row" layout-xs="column">
-  <div flex-gt-xs="66" flex="100">
-    flex 33% on mobile, <br>and 66% on gt-sm devices.
+  <div flex="66" flex-offset="15">
+    <md-card>
+     <md-card-content>
+       <md-button class="md-fab right" aria-label="Add new event">
+         <a ui-sref="register">
+           <md-icon>add</md-icon>
+         </a>
+       </md-button>
+
+       <h2>Events</h2>
+       <ul class="collection">
+            <li class="collection-item">Alvin</li>
+            <li class="collection-item">Alvin</li>
+            <li class="collection-item">Alvin</li>
+            <li class="collection-item">Alvin</li>
+          </ul>
+     </md-card-content>
+    </md-card>
   </div>
-  <div flex-gt-xs="33" flex="100">
-    flex 66%  on mobile, <br>and 33% on gt-sm devices.
-  </div>
-</div>
