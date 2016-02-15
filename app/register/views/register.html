@@ -1,7 +1,40 @@
-<div flex="66" flex-offset="15">
+
+<div flex="33" flex-offset="30">
+  <md-content layout-padding>
   <md-card>
+    <md-card-header>
+      <md-card-header-text class="md-title">
+        Register
+      </md-card-header-text>
+    </md-card-header>
     <md-card-content>
-      dsads
+      <form name="regForm" novalidate="novalidate">
+        <md-input-container class="md-block">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required ng-pattern="/\S+@\S+\.\S+/" ng-model="email" autocomplete="email" />
+          <div ng-messages="regForm.email.$error">
+            <div ng-message="required">This is required!</div>
+            <div ng-message="pattern">It doesn't seem to be correct!</div>
+          </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label for="password">Password</label>
+          <input type="password" name="password" ng-model="password" required ng-minlength="5" id="password" autocomplete="off" />
+          <div ng-messages="regForm.password.$error">
+            <div ng-message="required">This is required!</div>
+            <div ng-message="minlength">Minimum 5 characters!</div>
+          </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label for="passwordAgain">Password again</label>
+          <input type="password" name="passwordAgain" required ng-model="passwordAgain" password-match="password" id="passwordAgain" autocomplete="off" />
+          <div ng-messages="regForm.passwordAgain.$error">
+            <div ng-message="passwordMatch">Passwords are not matching!</div>
+            <div ng-message="required">This is required!</div>
+          </div>
+        </md-input-container>
+      </form>
     </md-card-content>
   </md-card>
+  </md-content>
 </div>

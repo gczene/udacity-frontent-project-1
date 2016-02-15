@@ -74,7 +74,7 @@ module.exports = function (grunt) {
         },
         directives: {
           todo: true,
-          unparam: false,
+          unparam: true,
           nomen: true,
           node: true,
           indent: 2,

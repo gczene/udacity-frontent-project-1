@@ -3,6 +3,7 @@ angular.module('app.components.register.state', [])
     'use strict';
     $stateProvider.state('register', {
       url: '/register',
-      template: 'reggg'
+      templateUrl: '/register/views/register.html',
+      controller: 'registerCtrl'
     });
   }]);

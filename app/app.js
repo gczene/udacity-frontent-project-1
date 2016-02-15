@@ -3,7 +3,8 @@ angular.module('App', [
   'ngMaterial',
   'app.state',
   'templates-main',
-  'app.components'
+  'app.components',
+  'ngMessages'
 ])
   .config(['$mdThemingProvider', function ($mdThemingProvider) {
     'use strict';
