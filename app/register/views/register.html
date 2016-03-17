@@ -8,7 +8,7 @@
       </md-card-header-text>
     </md-card-header>
     <md-card-content>
-      <form name="regForm" novalidate="novalidate">
+      <form ng-submit="submit(regForm)" name="regForm" novalidate="novalidate">
         <md-input-container class="md-block">
           <label for="email">E-mail</label>
           <input type="email" id="email" name="email" required ng-pattern="/\S+@\S+\.\S+/" ng-model="email" autocomplete="email" />
@@ -33,6 +33,7 @@
             <div ng-message="required">This is required!</div>
           </div>
         </md-input-container>
+        <md-button type="submit" aria-label="Submit"> Submit </md-button>
       </form>
     </md-card-content>
   </md-card>
